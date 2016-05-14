@@ -1,12 +1,13 @@
 'use strict';
-if (this.MonsterFight === undefined) this.MonsterFight = {};
 
 (function(context) {
 
   function start() {
 
     //Call your code here
-    console.log('starting!', context);
+    //console.log('starting!', context);
+
+    context.Battleground.init();
 
   }
 

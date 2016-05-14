@@ -9,7 +9,43 @@
   <body>
     <h1>Monster Fight</h1>
 
-    <script src="script.js"></script>
+    <div class="battleground">
+      <div class="bad-guys monster-box">
+          <h2>Bad guys</h2>
+
+          <div class="monster-holder">
+            <img class="avatar" />
+            <div class="hit-points"></div>
+          </div>
+
+          <div class="monster-messaging">yo</div>
+      </div>
+
+      <div class="good-guys monster-box">
+        <h2>Good guys</h2>
+
+        <div class="monster-holder">
+          <img class="avatar" />
+          <div class="hit-points"></div>
+        </div>
+
+        <div class="monster-messaging">dawg</div>
+      </div>
+
+      <div class="controls">
+        <button id="start-button">start</button>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="/js/ns.js"></script>
+
+    <script src="/js/monsters/monster.js"></script>
+    <script src="/js/monsters/minotaur.js"></script>
+    <script src="/js/monsters/elf.js"></script>
+
+    <script src="/js/battleground.js"></script>
+    <script src="/js/script.js"></script>
     <script>MonsterFight.start();</script>
   </body>
 
