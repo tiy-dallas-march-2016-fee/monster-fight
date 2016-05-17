@@ -20,7 +20,7 @@
     } else if (damage > 3) {
       return "Nice hit! the Red Dragon took " + damage + " and has " + this.hitpoints + " left but it's not dead yet so be careful!";
     } else {
-      return " The dragon took a miniscule hit of " + damage + ", it has " + this.hitpoints + " remaining and is ready for the next attack.";
+      return " The dragon took a hit of " + damage + ", it has " + this.hitpoints + " remaining and is ready for the next attack.";
     }
 
   }

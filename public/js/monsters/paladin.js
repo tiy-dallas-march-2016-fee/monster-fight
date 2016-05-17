@@ -9,7 +9,7 @@
   Paladin.prototype = new context.Monster();
 
   Paladin.create = function() {
-    return new Paladin('Paladin', '20', '/images/paladin.jpg');
+    return new Paladin('Paladin', '25', '/images/paladin.jpg');
   }
 
   Paladin.prototype.takeDamage = function(damage) {
