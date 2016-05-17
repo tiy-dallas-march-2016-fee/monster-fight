@@ -24,6 +24,7 @@
     else {
       return 'This monster took ' + damage + ' points of damage and has ' + this.hitpoints + ' left.';
     }
+
   }
 
   context.GoodMonsters.push(Elf);

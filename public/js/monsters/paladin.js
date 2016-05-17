@@ -16,14 +16,13 @@
     this.hitpoints -= damage;
 
     if (damage === 0) {
-      return 'The Paladin blocked the attack with a shield';
+      return "The Paladin defended himself successfully!";
+    } else if (damage > 3) {
+      return "Blasphemy!  The Paladin took " + damage + " and has " + this.hitpoints + " left so he can still fight!";
+    }else {
+      return "The Paladin took " + damage + " by the blasphemer and has " + this.hitpoints + " remaining";
     }
-    else if (damage > 3) {
-      return 'Critical hit! This Paladin took ' + damage + ' points of damage and has ' + this.hitpoints + ' left.';
-    }
-    else {
-      return 'The Paladin took ' + damage + ' points of damage and has ' + this.hitpoints + ' left.';
-    }
+
   }
 
   context.GoodMonsters.push(Paladin);
