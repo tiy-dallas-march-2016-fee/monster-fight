@@ -35,9 +35,10 @@
   battleground.startBattle = function startBattle() {
     $startButton.hide();
 
+    // Generate random number to choose good monster
     goodMonster = context.GoodMonsters[Math.floor(Math.random() * context.GoodMonsters.length)].create();
     $goodGuyImage.attr('src', goodMonster.imageUrl);
-
+    // Generate random number to choose bad monster.
     badMonster = context.BadMonsters[Math.floor(Math.random() * context.BadMonsters.length)].create();
     $badGuyImage.attr('src', badMonster.imageUrl);
 
