@@ -15,6 +15,10 @@
   Elf.prototype.takeDamage = function(damage) {
     this.hitpoints -= damage;
 
+    if (this.hitpoints <= 0) {
+      return "The Elf failed to protect his homeland";
+    }
+
     if (damage === 0) {
       return 'The Elf felt nothing!';
     }
