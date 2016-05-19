@@ -11,7 +11,11 @@
 
   Monster.prototype.takeDamage = function(damage) {
     this.hitpoints -= damage;
-    return 'This monster took ' + damage + ' points of damage and has ' + this.hitpoints + ' left.';
+    if (this.hitpoints <= 0) {
+      return "The monster has fallen in battle";
+    } else {
+      return 'This monster took ' + damage + ' points of damage and has ' + this.hitpoints + ' left.';
+    }
   }
 
   context.Monster = Monster;
